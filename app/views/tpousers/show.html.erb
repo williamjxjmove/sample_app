@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>V:</b>
+  <%= @tpouser.v %>
+</p>
+
+<p>
+  <b>Userid:</b>
+  <%= @tpouser.UserId %>
+</p>
+
+<p>
+  <b>Profileid:</b>
+  <%= @tpouser.ProfileId %>
+</p>
+
+<p>
+  <b>Day:</b>
+  <%= @tpouser.Day %>
+</p>
+
+<p>
+  <b>New:</b>
+  <%= @tpouser.New %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%= @tpouser.Total %>
+</p>
+
+
+<%= link_to 'Edit', edit_tpouser_path(@tpouser) %> |
+<%= link_to 'Back', tpousers_path %>

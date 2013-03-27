@@ -4,3 +4,9 @@ create sample_app
 $ rails new sample_app --skop-test-unit
 cd sample_app/
 
+
+rails generate model Info  first_name:string last_name:string phone:string
+e_mail:string --skip-migration --orm mongo_mapper
+
+rails generate model TpoUser v:Integer UserId:string ProfileId:string Day:Date New:Integer Total:Integer --skip-migration
+
