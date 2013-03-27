@@ -3,3 +3,4 @@ create sample_app
 
 $ rails new sample_app --skop-test-unit
 cd sample_app/
+
