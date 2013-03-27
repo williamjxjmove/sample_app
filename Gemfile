@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+require 'mongo'
+
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass', '2.1'
 
@@ -30,6 +32,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+group :development do
+  gem 'annotate', '2.5.0'
+  gem 'mongo_mapper', '~> 0.12.0'
+  gem 'bson_ext', '~> 1.8.2'
+  gem 'bson', '~> 1.8.2'
+  gem 'mongo', '~> 1.8.2'
+end
 
 group :test do
   gem 'capybara', '1.1.2'
