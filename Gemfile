@@ -16,6 +16,12 @@ group :development, :test do
   gem 'guard-spork', :github => 'guard/guard-spork'  
   # gem 'guard-spork', '1.2.0'
   gem 'spork', '0.9.2'  
+
+
+  gem 'mongo_mapper', '~> 0.12.0'
+  gem 'bson_ext', '~> 1.8.2'
+  gem 'bson', '~> 1.8.2'
+  gem 'mongo', '~> 1.8.2'
 end
 
 

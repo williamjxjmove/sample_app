@@ -7,17 +7,17 @@ describe "tpousers/index" do
         :v => "",
         :UserId => "User",
         :ProfileId => "Profile",
-        :Day => "",
-        :New => "",
-        :Total => ""
+        :Day1 => "",
+        :New1 => "",
+        :Total1 => ""
       ),
       stub_model(Tpouser,
         :v => "",
         :UserId => "User",
         :ProfileId => "Profile",
-        :Day => "",
-        :New => "",
-        :Total => ""
+        :Day1 => "",
+        :New1 => "",
+        :Total1 => ""
       )
     ])
   end

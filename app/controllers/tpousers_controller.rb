@@ -80,4 +80,64 @@ class TpousersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def contacts_in_range
+
+    # @tpouser = Tpouser.find(params)
+    @tpouser = params
+
+    puts '====== <contacts in range> ======'
+    puts params.inspect
+    puts params[:login].inspect
+    puts params[:startDate].inspect
+    puts params[:endDate].inspect
+    puts '------------------------------'
+    
+    # @tpouser = Tpouser.find_by_user(params[:user])
+    respond_to do |format|
+      format.html { render json: @tpouser }
+      format.json { render json: @tpouser }
+      format.js { render :json => @tpouser, :callback => params[:callback] }
+    end
+  end
+
+  # http://192.168.56.32:3000/v1/user/contacts/count/createdForMonth/williamjxj/12
+  def contacts_6month
+    
+    #@tpouser = Tpouser.find(params)
+    @tpouser = params
+
+    puts '====== <contacts 6month> ======'
+    puts params.inspect
+    puts params[:login].inspect
+    puts params[:month].inspect
+    puts '------------------------------'
+    
+    # @tpouser = Tpouser.where("info.first_name" => params[:first_name]).all
+    respond_to do |format|
+      format.html { render json: @tpouser }
+      format.json { render json: @tpouser }
+      format.js { render :json => @tpouser, :callback => params[:callback] }
+    end
+  end
+
+  #http://192.168.56.32:3000/v1/user/contacts/count/1234
+  def total_number
+    
+    #@tpouser = Tpouser.find(params[:login])
+    @tpouser = params
+
+    puts '====== <total number> ======'
+    puts params.inspect
+    puts params[:login].inspect
+    puts '------------------------------'
+
+    # @tpouser = Tpouser.where("info.last_name" => params[:last_name]).all
+    respond_to do |format|
+      format.html { render json: @tpouser }
+      format.json { render json: @tpouser }
+      format.js { render :json => @tpouser, :callback => params[:callback] }
+    end
+  end
+
 end

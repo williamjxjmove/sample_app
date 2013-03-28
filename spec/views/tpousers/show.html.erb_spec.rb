@@ -6,9 +6,9 @@ describe "tpousers/show" do
       :v => "",
       :UserId => "User",
       :ProfileId => "Profile",
-      :Day => "",
-      :New => "",
-      :Total => ""
+      :Day1 => "",
+      :New1 => "",
+      :Total1 => ""
     ))
   end
 

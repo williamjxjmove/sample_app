@@ -6,9 +6,9 @@ describe "tpousers/edit" do
       :v => "",
       :UserId => "MyString",
       :ProfileId => "MyString",
-      :Day => "",
-      :New => "",
-      :Total => ""
+      :Day1 => "",
+      :New1 => "",
+      :Total1 => ""
     ))
   end
 
@@ -20,9 +20,9 @@ describe "tpousers/edit" do
       assert_select "input#tpouser_v", :name => "tpouser[v]"
       assert_select "input#tpouser_UserId", :name => "tpouser[UserId]"
       assert_select "input#tpouser_ProfileId", :name => "tpouser[ProfileId]"
-      assert_select "input#tpouser_Day", :name => "tpouser[Day]"
-      assert_select "input#tpouser_New", :name => "tpouser[New]"
-      assert_select "input#tpouser_Total", :name => "tpouser[Total]"
+      assert_select "input#tpouser_Day1", :name => "tpouser[Day1]"
+      assert_select "input#tpouser_New1", :name => "tpouser[New1]"
+      assert_select "input#tpouser_Total1", :name => "tpouser[Total1]"
     end
   end
 end
